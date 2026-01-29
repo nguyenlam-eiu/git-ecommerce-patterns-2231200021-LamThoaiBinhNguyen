@@ -21,10 +21,14 @@ class GiftWrapDecorator extends ProductDecorator {
 
     getPrice() {
         // TODO: Return the product's original price + a $5 gift wrap fee.
+        var giftWrapFee = 5;
+        return super.getPrice() + giftWrapFee;
     }
 
     getDescription() {
         // TODO: Return the product's original description + ", gift wrapped".
+        var giftWrapDescription = ", gift wrapped";
+        return super.getDescription() + giftWrapDescription;
     }
 }
 
@@ -36,10 +40,14 @@ class ExtendedWarrantyDecorator extends ProductDecorator {
 
     getPrice() {
         // TODO: Return the product's original price + a $20 warranty fee.
+        var warrantyFee = 20;
+        return super.getPrice() + warrantyFee;
     }
 
     getDescription() {
         // TODO: Return the product's original description + ", with extended warranty".
+        var warrantyDescription = ", with extended warranty";
+        return super.getDescription() + warrantyDescription;
     }
 }
 
